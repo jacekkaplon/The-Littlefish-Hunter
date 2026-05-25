@@ -4,18 +4,18 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
 
 ## 🛠️ Infrastructure Architecture & Flow
 
-* 🌐 **Step 1:** Internet Scanner / Botnet Infrastructure launches distributed SSH port 22 attacks.
-* 🖥️ **Step 2:** Attacks hit the host environment (**rpilab** on Raspberry Pi).
-* 🐳 **Step 3:** Traffic is bridged directly into a isolated **Cowrie Interactive Honeypot** Docker container.
-* 📦 **Step 4:** Raw JSON logs are streamed in real-time to the **Wazuh SIEM Agent**.
-* 📊 **Step 5:** Wazuh manager decodes events and triggers live alerts on the **Security Dashboard**.
+```mermaid
+graph TD
+    A[🌐 Internet Scanner / Botnet] -->|SSH Port 22 Blasts| B[🖥️ Raspberry Pi Host: rpilab]
+    B -->|Container Bridging| C[🐳 Cowrie Interactive Honeypot]
+    C -->|Raw JSON Events| D[📦 Wazuh SIEM Agent]
+    D -->|Decoders & Rules| E[📊 Security Dashboard Alerts]
 
-## 📋 Project Overview
-* **SIEM Platform:** Wazuh
-* **Telemetry Source:** Cowrie Honeypot (Hardened Docker Image)
-* **Target Environment:** `rpilab` (Raspberry Pi Node)
-* **Monitored Vector:** Automated Distributed SSH Brute-Force & Credential Stuffing.
-* **Adversary Attribution:** Kinsing Botnet Threat Group (Monero Crypto-Jacking Campaign).
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#fbb,stroke:#333,stroke-width:2px
+    style E fill:#fff,stroke:#333,stroke-width:4px
 
 ---
 
