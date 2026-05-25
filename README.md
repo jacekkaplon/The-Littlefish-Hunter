@@ -30,7 +30,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed using 
 
 ### 1. 📄 Macro-Level Investigation: Distributed Attack Infrastructure
 This phase focused on the wide-scale triangulation of the campaign, profiling global network distributions, carrier netblocks, and tracking automated multi-vector credential stuffing blasts.
-* 👉 **[Download Campaign Intelligence Report (PDF)](./SOC_Threat_Intelligence_Report.pdf)** *(Upewnij się, że nazwa pliku pasuje do Twojego pierwszego pliku)*
+* 👉 **[Download Campaign Intelligence Report (PDF)](./SOC_Threat_Intelligence_Report.pdf)**
 
 ### 2. 📄 Micro-Level Deep Dive: Threat Host Attribution & Forensics
 A focused forensic examination isolating a single high-frequency attacking node. Includes the active technical workflow executed on the host system to extract IoC artifacts from a **56.9 MB** raw `cowrie.json` file inside a minimal Docker container.
