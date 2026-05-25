@@ -82,7 +82,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 <br>
 
 ### 📄 Phase 2: Active Defense & SIEM Integration
-* **Description:** Technical documentation focusing on host hardening, hardware-level VLAN 99 network segmentation using Alta Labs infrastructure, and configuring local dockerized sandboxes to securely isolate and log interactive SSH threat vectors.
+* **Description:** Technical documentation focusing on host hardening, hardware-level VLAN 99 network segmentation using Alta Labs infrastructure, and configuring local dockerized sandboxes. **Includes full documentation of offline manual penetration simulation (using a local Ubuntu attacking node) and validation of the container pipeline to verify live alerts generation in the Wazuh dashboard prior to public exposure.**
 <br>
 
 * 👉 [Download Honeypot Sensor Lab Phase 2 Report (PDF)](./The_Little_Fish_Hunter.pdf)
