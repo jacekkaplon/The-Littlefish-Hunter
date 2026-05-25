@@ -18,6 +18,8 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
                    │
                    ▼ (Decoders & Rules)
     [ Security Dashboard Live Alerts ]
+
+```
 📋 Project Overview
 SIEM Platform: Wazuh
 
@@ -57,4 +59,6 @@ grep -o "ssh-rsa [A-Za-z0-9+/]*=\?" cowrie_local.json | sort -u > botnet_key.txt
 
 # 4. Generate deterministic cryptographic hash of the evidence
 sha256sum botnet_key.txt
+```
+
 Disclaimer: This repository is part of a secure home-laboratory project used exclusively for active defense research, log analysis, and threat telemetry collection.
