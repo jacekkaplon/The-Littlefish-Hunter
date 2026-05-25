@@ -32,7 +32,9 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 <br>
 
 * 🔹 **Phase 1: Hybrid Core Infrastructure** – Deployment of the central cross-platform SIEM/XDR management stack. Implemented a centralized Wazuh Manager on Proxmox VE, establishing secure cloud connectivity to a remote public VPS via an encrypted WireGuard tunnel with custom `iptables` DNAT and MASQUERADE routing rules. Enforced deep telemetry collection across LAN endpoints using Windows Sysmon event channels and resource-optimized IoT logging.
+  <br>
 * 🔹 **Phase 2: The Sentinel (Active Defense)** – Deployment of the dedicated Raspberry Pi 4 network sensor node. Containerized the medium-interaction Cowrie honeypot using Docker and enforced zero-trust network perimeter isolation using an Alta Labs Route10 router. Segmented the infrastructure into an isolated Attack Zone (VLAN 99) for wlan0 and a secure Management LAN (VLAN 1) for eth0 log shipping.
+<br>
 * 🔹 **Phase 3: Threat Intelligence & Correlation (Current)** – Active 8-day multi-node telemetry collection window. Cross-referencing raw database records between the public cloud infrastructure and the residential honeypot node to isolate, profile, and attribute concurrent, coordinated global botnet campaigns.
 
 <br>
