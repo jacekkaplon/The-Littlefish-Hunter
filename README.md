@@ -4,12 +4,22 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
 
 ## 🛠️ Infrastructure Architecture & Flow
 
-graph TD
-    A[🌐 Internet Scanner / Botnet] -->|SSH Port 22 Blasts| B[🖥️ Raspberry Pi Host: rpilab]
-    B -->|Container Bridging| C[🐳 Cowrie Interactive Honeypot]
-    C -->|Raw JSON Events| D[📦 Wazuh SIEM Agent]
-    D -->|Decoders & Rules| E[📊 Security Dashboard Alerts]
-## 🔬 Project Documentation & Forensic Reports
+## 🛠️ Infrastructure Architecture & Flow
+
+```text
+ [ Internet Scanner / Botnet Campaign ]
+                   │
+                   ▼ (SSH Port 22 Blasts)
+     [ Raspberry Pi Host: rpilab ]
+                   │
+                   ▼ (Container Bridging)
+  [ Cowrie Interactive Honeypot (Docker) ]
+                   │
+                   ▼ (Raw JSON Streams)
+         [ Wazuh SIEM Agent ]
+                   │
+                   ▼ (Decoders & Rules)
+    [ Security Dashboard Live Alerts ]
 
 This laboratory setup generated high-fidelity telemetry that was analyzed using two distinct methodologies. You can access the complete technical PDF reports directly within this repository:
 
