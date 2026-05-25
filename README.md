@@ -1,8 +1,10 @@
-# The Littlefish Hunter – AI-Powered Honeypot & Threat Detection Node
+# The Littlefish Hunter – Honeypot & Threat Detection Node
 
 An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed within a residential hybrid infrastructure (**rpilab**). This project demonstrates initial access interception, automated event logging via Wazuh SIEM, and active post-exploitation attribution of global automated threat campaigns.
 
+Markdown
 ## 🛠️ Infrastructure Architecture & Flow
+
 [Internet Scanner / Botnet]
 │
 ▼ (Port 22 / SSH)
