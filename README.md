@@ -27,6 +27,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
 
 📋 Project Overview
 
+<br>
 
 SIEM Platform: Wazuh
 
@@ -37,7 +38,8 @@ Target Environment: rpilab (Raspberry Pi Node)
 Monitored Vector: Automated Distributed SSH Brute-Force & Credential Stuffing.
 
 Adversary Attribution: Kinsing Botnet Threat Group (Monero Crypto-Jacking Campaign).
-
+<br>
+<br>
 
 🔬 Project Documentation & Forensic Reports
 
@@ -47,13 +49,15 @@ This laboratory setup generated high-fidelity telemetry that was analyzed using 
 
 This phase focused on the wide-scale triangulation of the campaign, profiling global network distributions, carrier netblocks, and tracking automated multi-vector credential stuffing blasts.
 
-
+<br>
+<br>
 👉 Open Campaign Intelligence Report (PDF)
 
 2. 📄 Micro-Level Deep Dive: Threat Host Attribution & Forensics
 
 A focused forensic examination isolating a single high-frequency attacking node. Includes the active technical workflow executed on the host system to extract IoC artifacts from a 56.9 MB raw cowrie.json file inside a minimal Docker container.
-
+<br>
+<br>
 
 👉 Open Deep-Dive Forensic Report (PDF)
 
