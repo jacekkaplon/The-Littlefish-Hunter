@@ -35,8 +35,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 
 <br>
 
-* 🔹 **Phase 2: The Sentinel (Active Defense)** – Deployment of the dedicated Raspberry Pi 4 network sensor node. Containerized the medium-interaction Cowrie honeypot using Docker and enforced zero-trust network perimeter isolation using an Alta Labs Route10 router. Segmented the infrastructure into an isolated Attack Zone (VLAN 99) for wlan0 and a secure Management LAN (VLAN 1) for eth0 log shipping.
-
+* 🔹 **Phase 2: The Sentinel (Active Defense & LAN Validation)** – Deployment of the dedicated Raspberry Pi 4 network sensor node. Containerized the medium-interaction Cowrie honeypot using Docker and enforced zero-trust network perimeter isolation using an Alta Labs Route10 router. Segmented the infrastructure into an isolated Attack Zone (VLAN 99) for wlan0 and a secure Management LAN (VLAN 1) for eth0 log shipping. **Conducted pre-deployment offline manual testing inside the LAN to validate the end-to-end telemetry pipeline and verify custom Wazuh decoding rules before shifting the sensor online.**
 <br>
 
 * 🔹 **Phase 3: Threat Intelligence & Correlation (Current)** – Active 8-day multi-node telemetry collection window. Cross-referencing raw database records between the public cloud infrastructure and the residential honeypot node to isolate, profile, and attribute concurrent, coordinated global botnet campaigns.
@@ -143,3 +142,5 @@ grep -o "ssh-rsa [A-Za-z0-9+/]*=\?" cowrie_local.json | sort -u > botnet_key.txt
 
 # 4. Generate deterministic cryptographic hash of the evidence
 sha256sum botnet_key.txt
+```
+Disclaimer: This repository is part of a secure home-laboratory project used exclusively for active defense research, log analysis, and threat telemetry collection.
