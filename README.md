@@ -61,6 +61,8 @@ A focused forensic examination isolating a single high-frequency attacking node.
 
 * 👉 [Download Deep-Dive Forensic Report (PDF)](./CTI_Threat_Report_Kinsing_Botnet.pdf)
 
+<br>
+
 💻 Forensic Log Extraction Playbook (Summary)
 
 To bypass image bin constraints within the active container, the following forensic execution layout was utilized to isolate 29 unique malicious SSH public keys:
