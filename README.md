@@ -47,7 +47,7 @@ A focused forensic examination isolating a single high-frequency attacking node.
 💻 Forensic Log Extraction Playbook (Summary)
 To bypass image bin constraints within the active container, the following forensic execution layout was utilized to isolate 29 unique malicious SSH public keys:
 
-Bash
+```
 # 1. Audit container state
 docker ps
 
