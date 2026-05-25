@@ -2,20 +2,13 @@
 
 An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed within a residential hybrid infrastructure (**rpilab**). This project demonstrates initial access interception, automated event logging via Wazuh SIEM, and active post-exploitation attribution of global automated threat campaigns.
 
-Markdown
 ## 🛠️ Infrastructure Architecture & Flow
 
-[Internet Scanner / Botnet]
-│
-▼ (Port 22 / SSH)
-[Raspberry Pi Host (rpilab)]
-│
-▼ (Docker Container Bridging)
-[Cowrie Interactive Honeypot] ──(Raw JSON Events)──► [Wazuh SIEM Agent]
-│
-▼ (Decoders/Rules)
-[Security Dashboard Alerts]
-
+* 🌐 **Step 1:** Internet Scanner / Botnet Infrastructure launches distributed SSH port 22 attacks.
+* 🖥️ **Step 2:** Attacks hit the host environment (**rpilab** on Raspberry Pi).
+* 🐳 **Step 3:** Traffic is bridged directly into a isolated **Cowrie Interactive Honeypot** Docker container.
+* 📦 **Step 4:** Raw JSON logs are streamed in real-time to the **Wazuh SIEM Agent**.
+* 📊 **Step 5:** Wazuh manager decodes events and triggers live alerts on the **Security Dashboard**.
 
 ## 📋 Project Overview
 * **SIEM Platform:** Wazuh
