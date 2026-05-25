@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.jpg" width="260" alt="The Littlefish Hunter Logo">
+</p>
+
 The Littlefish Hunter – AI-Powered Honeypot & Threat Detection Node
 
 An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed within a residential hybrid infrastructure (rpilab). This project demonstrates initial access interception, automated event logging via Wazuh SIEM, and active post-exploitation attribution of global automated threat campaigns.
