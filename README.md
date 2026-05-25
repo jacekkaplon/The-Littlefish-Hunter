@@ -45,16 +45,18 @@ Adversary Attribution: Kinsing Botnet Threat Group (Monero Crypto-Jacking Campai
 
 This laboratory setup generated high-fidelity telemetry that was analyzed using two distinct methodologies. You can access the complete technical PDF reports directly within this repository:
 <br>
+
 1. 📄 Macro-Level Investigation: Distributed Attack Infrastructure
 This phase focused on the wide-scale triangulation of the campaign, profiling global network distributions, carrier netblocks, and tracking automated multi-vector credential stuffing blasts.
-<br>
-👉 Open Campaign Intelligence Report (PDF): https://github.com/jacekkaplon/The-Littlefish-Hunter/blob/main/SOC_Threat_Intelligence_Report_Botnet_Campaign.pdf
-<br>
+
+👉 Download Campaign Intelligence Report (PDF)
+
 2. 📄 Micro-Level Deep Dive: Threat Host Attribution & Forensics
 A focused forensic examination isolating a single high-frequency attacking node. Includes the active technical workflow executed on the host system to extract IoC artifacts from a 56.9 MB raw cowrie.json file inside a minimal Docker container.
-<br>
-👉 Open Deep-Dive Forensic Report (PDF): https://github.com/jacekkaplon/The-Littlefish-Hunter/blob/main/CTI_Threat_Report_Kinsing_Botnet.pdf
-<br>
+
+👉 Download Deep-Dive Forensic Report (PDF)
+
+
 💻 Forensic Log Extraction Playbook (Summary)
 
 To bypass image bin constraints within the active container, the following forensic execution layout was utilized to isolate 29 unique malicious SSH public keys:
