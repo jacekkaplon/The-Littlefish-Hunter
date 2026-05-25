@@ -23,7 +23,8 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
                    ▼ (Decoders & Rules)
     [ Security Dashboard Live Alerts ]
 ```
-
+<br>
+<br>
 
 📋 Project Overview
 🛡️ SIEM Platform: Wazuh
@@ -35,20 +36,23 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
 🎯 Monitored Vector: Automated Distributed SSH Brute-Force & Credential Stuffing.
 
 🏴‍☠️ Adversary Attribution: Kinsing Botnet Threat Group (Monero Crypto-Jacking Campaign).
+<br>
+<br>
+
 
 🔬 Project Documentation & Forensic Reports
 This laboratory setup generated high-fidelity telemetry that was analyzed using two distinct methodologies. You can access the complete technical PDF reports directly within this repository:
 
 1. 📄 Macro-Level Investigation: Distributed Attack Infrastructure
 This phase focused on the wide-scale triangulation of the campaign, profiling global network distributions, carrier netblocks, and tracking automated multi-vector credential stuffing blasts.
-
-👉 Download Campaign Intelligence Report (PDF)
-
+<br>
+👉 [Download Campaign Intelligence Report (PDF)](./SOC_Threat_Intelligence_Report_Botnet_Campaign.pdf)
+<br>
 2. 📄 Micro-Level Deep Dive: Threat Host Attribution & Forensics
 A focused forensic examination isolating a single high-frequency attacking node. Includes the active technical workflow executed on the host system to extract IoC artifacts from a 56.9 MB raw cowrie.json file inside a minimal Docker container.
-
-👉 Download Deep-Dive Forensic Report (PDF)
-
+<br>
+👉 [Download Deep-Dive Forensic Report (PDF)](./CTI_Threat_Report_Kinsing_Botnet.pdf)
+<br>
 
 💻 Forensic Log Extraction Playbook (Summary)
 
