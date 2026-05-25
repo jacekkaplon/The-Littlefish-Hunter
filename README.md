@@ -48,7 +48,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 <br>
 
 * 🛡️ **SIEM Platform:** Wazuh Manager (Debian) hosting a heterogeneous fleet of 9 active endpoints across 5 operating systems.
-* 🪵 **Telemetry Sensor:** Cowrie Honeypot (Hardened Docker Image, port mapping 22 -> 2222) + Public VPS Auth Engine.
+* 🪵 **Telemetry Source:** Cowrie Honeypot (Hardened Docker Image, port mapping 22 -> 2222) + Public VPS Auth Engine.
 * 🌐 **Attack Surface Volume:** Captured **937 unique attacking IP addresses** on the residential honeypot and **30,576 authentication failures** on the public cloud node within a single 24-hour window.
 * 🎯 **Cross-Infra Correlation:** Confirmed an active, coordinated botnet campaign utilizing 4 sequential IPs from a single /29 routed block (**87.251.64.144–149**) attacking both independent environments concurrently (1,244 total correlated hits).
 * 🏴‍☠️ **Adversary Attribution:** Threat actor group utilizing Polish ASN space (WHOIS: Isaev Igor Maratovich) operating rented VPS scanning nodes alongside active IoT worms targeting default hardware firmware credentials (`345gs5662d34`).
@@ -70,6 +70,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 ### 📄 Phase 1: Core SOC Infrastructure Deployment
 * **Description:** Engineering the cross-platform SIEM/XDR environment. Covers local virtualization routing stability (Proxmox VE), WireGuard L3 forwarding over NAT via advanced `iptables` rules, and deep Sysmon ingest configuration for Windows Server 2025 endpoints.
 <br>
+
 * 👉 [Download SOC Infrastructure Phase 1 Report (PDF)](./SOC_wazuh_phase1.pdf)
 
 <br>
@@ -77,6 +78,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 ### 📄 Phase 2: Active Defense & SIEM Integration
 * **Description:** Technical documentation focusing on host hardening, hardware-level VLAN 99 network segmentation using Alta Labs infrastructure, and configuring local dockerized sandboxes to securely isolate and log interactive SSH threat vectors.
 <br>
+
 * 👉 [Download Honeypot Sensor Lab Phase 2 Report (PDF)](./The_Little_Fish_Hunter.pdf)
 
 <br>
@@ -84,6 +86,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 ### 📄 Phase 3: Comprehensive Threat Intelligence (Final Report)
 * **Description:** The final core research paper cross-referencing multi-node global telemetry to isolate coordinated botnet campaigns. Profiles real-world adversary behavior, analyzes credential-stuffing distributions, and establishes definitive attribution metrics.
 <br>
+
 * 👉 [Download Threat Intelligence Phase 3 Report (PDF)](./TheLittleFishHunter_Phase3_FINAL_RAPORT.pdf)
 
 <br>
@@ -91,6 +94,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 ### 📄 Incident Analysis Study: Distributed Attack Infrastructure
 * **Description:** A macro-level investigation focused on the wide-scale triangulation of automated global campaigns, profiling carrier netblocks, geographic attacker distribution, and multi-vector credential stuffing blasts.
 <br>
+
 * 👉 [Download Campaign Intelligence Report (PDF)](./SOC_Threat_Intelligence_Report_Botnet_Campaign.pdf)
 
 <br>
@@ -98,6 +102,7 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 ### 📄 Forensic Deep Dive: Threat Host Attribution
 * **Description:** A micro-level forensic examination isolating a single high-frequency attacking node. Outlines the active technical CLI workflow executed on the host system to extract IoC artifacts from a **56.9 MB** raw `cowrie.json` telemetric stream.
 <br>
+
 * 👉 [Download Deep-Dive Forensic Report (PDF)](./CTI_Threat_Report_Kinsing_Botnet.pdf)
 
 <br>
