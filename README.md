@@ -35,7 +35,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 
 <br>
 
-* 🔹 **Phase 2: The Sentinel (Active Defense & LAN Validation)** – Deployment of the dedicated Raspberry Pi 4 network sensor node. [cite_start]Containerized the medium-interaction Cowrie honeypot using Docker and enforced zero-trust network perimeter isolation using an Alta Labs Route10 router[cite: 654, 656, 687]. [cite_start]Segmented the infrastructure into an isolated Attack Zone (VLAN 99) for wlan0 and a secure Management LAN (VLAN 1) for eth0 log shipping. [cite_start]Conducted pre-deployment offline manual testing and penetration simulation inside the LAN using a local Ubuntu attacking node (`nmap` / `hydra`) to validate the end-to-end telemetry pipeline and verify custom Wazuh decoding rules before shifting the sensor online[cite: 658, 659, 663, 691, 694, 695].
+* 🔹 **Phase 2: The Sentinel (Active Defense & LAN Validation)** – Deployment of the dedicated Raspberry Pi 4 network sensor node. Containerized the medium-interaction Cowrie honeypot using Docker and enforced zero-trust network perimeter isolation using an Alta Labs Route10 router[cite: 654, 656, 687]. [cite_start]Segmented the infrastructure into an isolated Attack Zone (VLAN 99) for wlan0 and a secure Management LAN (VLAN 1) for eth0 log shipping. [cite_start]Conducted pre-deployment offline manual testing and penetration simulation inside the LAN using a local Ubuntu attacking node (`nmap` / `hydra`) to validate the end-to-end telemetry pipeline and verify custom Wazuh decoding rules before shifting the sensor online[cite: 658, 659, 663, 691, 694, 695].
 
 <br>
 
