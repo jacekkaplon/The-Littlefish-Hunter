@@ -4,7 +4,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
 
 ## 🛠️ Infrastructure Architecture & Flow
 
-## 🛠️ Infrastructure Architecture & Flow
+
 
 ```text
  [ Internet Scanner / Botnet Campaign ]
@@ -20,6 +20,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
                    │
                    ▼ (Decoders & Rules)
     [ Security Dashboard Live Alerts ]
+
 
 This laboratory setup generated high-fidelity telemetry that was analyzed using two distinct methodologies. You can access the complete technical PDF reports directly within this repository:
 
