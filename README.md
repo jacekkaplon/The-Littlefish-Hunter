@@ -2,12 +2,13 @@
   <img src="logo.jpg" width="260" alt="The Littlefish Hunter Logo">
 </p>
 
-The Littlefish Hunter – AI-Powered Honeypot & Threat Detection Node
+# The Littlefish Hunter – AI-Powered Honeypot & Threat Detection Node
 
-An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed within a residential hybrid infrastructure (rpilab). This project demonstrates initial access interception, automated event logging via Wazuh SIEM, and active post-exploitation attribution of global automated threat campaigns.
+An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed within a residential hybrid infrastructure (**rpilab**). This project demonstrates initial access interception, automated event logging via Wazuh SIEM, and active post-exploitation attribution of global automated threat campaigns.
 
-🛠️ Infrastructure Architecture & Flow
+## 🛠️ Infrastructure Architecture & Flow
 
+```text
  [ Internet Scanner / Botnet Campaign ]
                    │
                    ▼ (SSH Port 22 Blasts)
@@ -21,6 +22,7 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis node deployed
                    │
                    ▼ (Decoders & Rules)
     [ Security Dashboard Live Alerts ]
+```
 
 
 📋 Project Overview
@@ -55,6 +57,7 @@ A focused forensic examination isolating a single high-frequency attacking node.
 
 To bypass image bin constraints within the active container, the following forensic execution layout was utilized to isolate 29 unique malicious SSH public keys:
 
+```
 # 1. Audit container state
 docker ps
 
@@ -66,8 +69,7 @@ grep -o "ssh-rsa [A-Za-z0-9+/]*=\?" cowrie_local.json | sort -u > botnet_key.txt
 
 # 4. Generate deterministic cryptographic hash of the evidence
 sha256sum botnet_key.txt
+```
 
-
-Disclaimer: This repository is part of a secure home-laboratory project used exclusively for active defense research, log analysis, and threat telemetry collection.
 
 Disclaimer: This repository is part of a secure home-laboratory project used exclusively for active defense research, log analysis, and threat telemetry collection.
