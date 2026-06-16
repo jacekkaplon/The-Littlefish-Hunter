@@ -150,9 +150,11 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 
 <br>
 <br>
+<br>
 ### 📄 Phase 4 Extension: Automated Malware Triage & VirusTotal API Integration
 * **Description:** Engineering documentation covering the implementation of a fully automated malware enrichment pipeline. Integrates Cowrie's persistent Docker volume mounts with Wazuh FIM (inotify, real-time SHA-256 hashing) and the VirusTotal REST API — eliminating manual triage overhead for dropped payloads. Validated end-to-end using an EICAR test signature, triggering Rule 87105 and returning a 60-engine malicious verdict within seconds of filesystem write detection.
 <br>
+
 * 👉 [Download Automated Threat Detection Pipeline Report (PDF)](./Automated_Threat_Detection_Pipeline.pdf)
 <br>
 <br>
