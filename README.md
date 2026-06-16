@@ -158,6 +158,21 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 👉 [Download Automated Threat Detection Pipeline Report (PDF)](./Automated_Threat_Detection_Pipeline.pdf)
 
 
+
+### 📄 Incident Response: INC-2026-001 — Automated Malware Triage (Pipeline Validation)
+* **Description:** Formal IR ticket documenting the end-to-end validation of the automated threat detection pipeline. Records the complete detection lifecycle: EICAR payload drop → Wazuh FIM (inotify) trigger → SHA-256 hash computation → VirusTotal REST API enrichment → Rule 87105 alert (severity 12). Confirms sub-5-second alert-to-enrichment latency. MITRE: T1203.
+<br>
+
+* 👉 [Download IR Ticket INC-2026-001 (PDF)](./INC-2026-001_Incident_Report.pdf)
+
+---
+
+### 📄 Incident Response: INC-2026-002 — Unauthorized SSH Access & Post-Compromise Reconnaissance
+* **Description:** Formal IR ticket documenting a real-world multi-stage intrusion captured by the Cowrie honeypot. Covers the full attack chain: automated SSH brute-force → successful root login → immediate `uname -a` system fingerprinting. Full IoC table, GeoIP enrichment (Salvador, Brazil), and MITRE chain T1110 → T1078 → T1059 → T1082 → T1105. Attack-to-recon time: ~6 seconds.
+<br>
+
+* 👉 [Download IR Ticket INC-2026-002 (PDF)](./INC-2026-002_Incident_Report.pdf)
+
 <br>
 <br>
 
