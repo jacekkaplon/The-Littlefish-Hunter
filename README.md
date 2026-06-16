@@ -157,7 +157,8 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 
 👉 [Download Automated Threat Detection Pipeline Report (PDF)](./Automated_Threat_Detection_Pipeline.pdf)
 
-
+<br>
+<br>
 
 ### 📄 Incident Response: INC-2026-001 — Automated Malware Triage (Pipeline Validation)
 * **Description:** Formal IR ticket documenting the end-to-end validation of the automated threat detection pipeline. Records the complete detection lifecycle: EICAR payload drop → Wazuh FIM (inotify) trigger → SHA-256 hash computation → VirusTotal REST API enrichment → Rule 87105 alert (severity 12). Confirms sub-5-second alert-to-enrichment latency. MITRE: T1203.
