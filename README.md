@@ -177,8 +177,14 @@ This laboratory setup generated high-fidelity telemetry that was analyzed and do
 <br>
 <br>
 
----
+### 📄 Incident Response: INC-2026-003 — Linux Cryptominer Payload Delivery via SFTP
+* **Description:** Formal IR ticket documenting a real-world malware delivery event captured live by the Cowrie honeypot. A threat actor (49.173.65.19, Seoul, South Korea) uploaded a 23.44 MB ELF64 Linux cryptominer binary via SFTP, deliberately naming it `sshd` to masquerade as the legitimate OpenSSH daemon — a deliberate defence evasion technique. Wazuh FIM detected the upload (Rule 100203) and the automated VirusTotal pipeline returned a 37/65 engine malicious verdict within **2 seconds**. Full payload analysis included: SHA-256, MD5, AV vendor verdicts (Kaspersky, ESET, Microsoft, ClamAV), MITRE chain T1105 → T1036 → T1059 → T1496 → T1203.
+<br>
 
+* 👉 [Download IR Ticket INC-2026-003 (PDF)](./INC-2026-003_Incident_Report.pdf)
+
+---
+<br>
 <br>
 
 ## 💻 Forensic Log Extraction Playbook (Summary)
