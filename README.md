@@ -24,7 +24,35 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 <br>
 
 ---
+<br>
+<br>
+## 📊 Current Status (July 2026)
 
+As part of the **"The Littlefish Hunter"** research framework, a continuous **30-day cross-environment monitoring exercise** (June–July 2026) was conducted across two distinct infrastructures using a centralized Wazuh SIEM deployment:
+* **Production Cloud VPS** (Agent `PL84924`)
+* **Residential Cowrie Honeypot** (Agent `rpilab`)
+
+### Key Cross-Environment Analytical Insights:
+* **Strict Botnet Segmentation:** Malicious campaigns targeting cloud infrastructure operate entirely independently from those scanning residential IoT address spaces.
+* **Massive Cloud Volumetrics:** Inbound traffic hitting the Cloud VPS is high-velocity, industrial-scale, and originates heavily from server netblocks and data centers (including the heavily active **AS43422** block in Poland).
+* **Stable IoT Perimeter Hum:** Scanning patterns hitting the residential honeypot exhibit a continuous background baseline velocity, focusing strictly on default firmware credentials and hardcoded embedded device backdoors (Mirai/Mozi-like propagation routines).
+* **Zero Host Overlap:** Log correlation analysis confirmed near-zero overlap between the source attacking IP vectors across both environments within the 30-day analysis window.
+
+---
+
+### 📈 Intelligence Reporting Pipeline
+
+The repository utilizes a dual-tier documentation strategy to demonstrate both deep forensic threat intelligence capabilities and automated CI/CD security operations metrics:
+
+#### 1. Featured Comprehensive Analysis (Showcase Report)
+This primary flagship document serves as an enterprise-grade threat intelligence assessment. It covers core methodologies, detailed network topology breakdowns, volumetric chronological timelines, threat actor profiling (BGP routing/ASN attribution), and precise indicator extraction.
+* 📄 **Featured Deep-Dive Report:** [The Littlefish Hunter - 30-Day Enterprise CTI Briefing (PDF)](./reports/full/The_Littlefish_Hunter_Enterprise_CTI_Report1.pdf)
+
+#### 2. Automated Monthly Baselines (Script-Generated Logs)
+To sustain hands-free operational continuity, a persistent reporting automation pipeline is deployed directly on the SIEM manager infrastructure. 
+* **Execution Cadence:** On the 1st of every month, a localized cron utility triggers an automated parser script to process telemetry, outputting standardized markdown/ASCII logs.
+* **Storage Path:** Automated incremental metrics are archived inside the directory: [`reports/monthly/`](reports/monthly/)
+* **Latest Raw Automated Artifact:** [📄 2026-07-02_30day_Threat_Report.md](reports/monthly/2026-07-02_30day_Threat_Report.md)
 <br>
 
 ## 🚀 Project Phases & Evolution
