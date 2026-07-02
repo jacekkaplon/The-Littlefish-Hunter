@@ -31,19 +31,74 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 
 <br>
 
-* 🔹 **Phase 1: Hybrid Core Infrastructure** – Deployment of the central cross-platform SIEM/XDR management stack. Implemented a centralized Wazuh Manager on Proxmox VE, establishing secure cloud connectivity to a remote public VPS via an encrypted WireGuard tunnel with custom `iptables` DNAT and MASQUERADE routing rules. Enforced deep telemetry collection across LAN endpoints using Windows Sysmon event channels and resource-optimized IoT logging.
-
+### 📄 Phase 1: Core SOC Infrastructure Deployment
+* **Description:** Engineering the cross-platform SIEM/XDR environment. Covers local virtualization routing stability (Proxmox VE), WireGuard L3 forwarding over NAT via advanced `iptables` rules, and deep Sysmon ingest configuration for Windows Server 2025 endpoints.
 <br>
 
-* 🔹 **Phase 2: The Sentinel (Active Defense & LAN Validation)** – Deployment of the dedicated Raspberry Pi 4 network sensor node. Containerized the medium-interaction Cowrie honeypot using Docker and enforced zero-trust network perimeter isolation using an Alta Labs Route10 router[cite: 654, 656, 687]. [cite_start]Segmented the infrastructure into an isolated Attack Zone (VLAN 99) for wlan0 and a secure Management LAN (VLAN 1) for eth0 log shipping. [cite_start]Conducted pre-deployment offline manual testing and penetration simulation inside the LAN using a local Ubuntu attacking node (`nmap` / `hydra`) to validate the end-to-end telemetry pipeline and verify custom Wazuh decoding rules before shifting the sensor online[cite: 658, 659, 663, 691, 694, 695].
+* 👉 [Download SOC Infrastructure Phase 1 Report (PDF)](./reports/full/SOC_wazuh_phase1.pdf)
 
 <br>
-
-* 🔹 **Phase 3: NAT Boundary De-anonymization & SOC Hardening** – Resolved a critical architectural "Visibility Gap" inherent in Reverse-Proxy/DNAT topologies, where internal backend systems perceive all forwarded malicious traffic as originating from the local tunnel gateway peer (`10.10.10.x`)[cite: 570, 572]. Implemented live edge telemetry logging via custom `iptables` tracking rules in the `PREROUTING` chain on the cloud gateway node[cite: 585, 587]. Configured the local Wazuh daemon to capture these raw packet headers before network translation (`/var/log/kern.log`), automatically re-establishing original source IP visibility and enabling native GeoIP threat enrichment[cite: 568, 585, 588, 603, 604].
-
 <br>
 
-* 🔹 **Phase 4: Stateful Threat Intelligence & Correlation (Current)** – Developed composite correlation rules (`Rule 100305`, Level 12 Critical Alert) within the Wazuh Manager to cross-reference concurrent multi-node telemetry streams[cite: 610, 614, 621, 625]. The system statefully links a perimeter firewall connection hit on the public gateway with an immediate application-level authentication failure on a hidden local endpoint[cite: 608, 610, 613, 625]. This enables the isolation, profiling, and micro-level forensic analysis of coordinated global botnet campaigns attempting to leverage distributed attack frameworks.
+### 📄 Phase 2: Active Defense & SIEM Integration
+* **Description:** Technical documentation focusing on host hardening, hardware-level VLAN 99 network segmentation using Alta Labs infrastructure, and configuring local dockerized sandboxes. Includes full documentation of offline manual penetration simulation (using a local Ubuntu attacking node) and validation of the container pipeline to verify live alerts generation in the Wazuh dashboard prior to public exposure.
+<br>
+
+* 👉 [Download Honeypot Sensor Lab Phase 2 Report (PDF)](./reports/full/The_Little_Fish_Hunter.pdf)
+
+<br>
+<br>
+
+### 📄 Phase 2 Extension: Honeypot Simulation & Detection Validation
+* **Description:** Advanced attack scenario validation log capturing full multi-stage adversary tactics. Documents structural alert responses for non-intrusive service scans (`nmap -sV -Pn`), high-frequency automated password cracking suites (`hydra`), and tracks post-compromise terminal command injection chains.
+<br>
+
+* 👉 [Download Honeypot Validation Blueprint (PDF)](<./reports/full/The Little Fish Hunter – Attack Simulation & Detection Validation (Phase 2).pdf>)
+
+<br>
+<br>
+
+### 📄 Phase 3: Hybrid Infrastructure De-anonymization Report
+* **Description:** Advanced engineering blueprint detailing the technical elimination of proxy-induced identity masking. Maps out the setup of native edge-level logging rule chains (`SOC_ACCESS`), Wazuh data log parsers, custom XML correlation parameters, and live GeoIP analysis.
+<br>
+
+* 👉 [Download De-anonymization Architecture Report (PDF)](./reports/full/De-anonymizing_Attacks.pdf)
+
+<br>
+<br>
+
+### 📄 Phase 4: Comprehensive Threat Intelligence (Final Report)
+* **Description:** The final core research paper cross-referencing multi-node global telemetry to isolate coordinated botnet campaigns. Profiles real-world adversary behavior, analyzes credential-stuffing distributions, and establishes definitive attribution metrics.
+<br>
+
+* 👉 [Download Threat Intelligence Phase 3 Report (PDF)](./reports/full/TheLittleFishHunter_Phase3_FINAL_RAPORT.pdf)
+
+<br>
+<br>
+
+### 📄 Incident Analysis Study: Distributed Attack Infrastructure
+* **Description:** A macro-level investigation focused on the wide-scale triangulation of automated global campaigns, profiling carrier netblocks, geographic attacker distribution, and multi-vector credential stuffing blasts.
+<br>
+
+* 👉 [Download Campaign Intelligence Report (PDF)](./reports/full/SOC_Threat_Intelligence_Report_Botnet_Campaign.pdf)
+
+<br>
+<br>
+
+### 📄 Forensic Deep Dive: Threat Host Attribution
+* **Description:** A micro-level forensic examination isolating a single high-frequency attacking node. Outlines the active technical CLI workflow executed on the host system to extract IoC artifacts from a **56.9 MB** raw `cowrie.json` telemetric stream.
+<br>
+
+* 👉 [Download Deep-Dive Forensic Report (PDF)](./reports/full/CTI_Threat_Report_Kinsing_Botnet.pdf)
+
+<br>
+<br>
+
+### 📄 Phase 4 Extension: Automated Malware Triage & VirusTotal API Integration
+
+**Description:** Engineering documentation covering the implementation of a fully automated malware enrichment pipeline. Integrates Cowrie's persistent Docker volume mounts with Wazuh FIM (inotify, real-time SHA-256 hashing) and the VirusTotal REST API — eliminating manual triage overhead for dropped payloads. Validated end-to-end using an EICAR test signature, triggering Rule 87105 and returning a 60-engine malicious verdict within seconds of filesystem write detection.
+
+👉 [Download Automated Threat Detection Pipeline Report (PDF)](./reports/full/Automated_Threat_Detection_Pipeline.pdf)
 
 <br>
 <br>
