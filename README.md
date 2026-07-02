@@ -102,7 +102,16 @@ An automated Cyber Threat Intelligence (CTI) and forensic analysis platform depl
 
 <br>
 <br>
+#### 🚨 Incident Response & Live Detection Logs
+* 👉 [INC-2026-001: Automated Malware Triage Pipeline Validation (PDF)](./reports/incident/INC-2026-001_Incident_Report.pdf) — Technical verification of the automated containment pot, triggering real-time SHA-256 integrity alerts via simulated EICAR patch writes.
+* 👉 [INC-2026-002: Unauthorized SSH Access & Post-Compromise Reconnaissance (PDF)](./reports/incident/INC-2026-002_Incident_Report.pdf) — Live triage of an active brute-force intrusion, tracking rapid post-exploitation environment fingerprinting within seconds of breach validation.
+* 👉 [INC-2026-003: Active Payload Deployment & Session Termination (PDF)](./reports/incident/INC-2026-003_Incident_Report.pdf) — In-depth analysis of a multi-stage malware execution loop tracking dropper ingestion attempts and subsequent sandbox isolation.
+* 👉 [INC-2026-004: SIEM Logging Discrepancy & Rules Engineering (PDF)](./reports/incident/INC-2026-004_Incident_Report.pdf) — *[Pending Upload]* Analysis of unparsed system telemetry variables leading to custom XML decoder modifications and rule enhancement.
+* 👉 [INC-2026-005: Automated Multi-Wave Campaign & Rule Verification (PDF)](./reports/incident/INC-2026-005_Incident_Report.pdf) — *[Pending Upload]* High-density reconnaissance campaign analysis validating the operational success of the updated detection framework.
+
 <br>
+<br>
+
 
 ---
 
