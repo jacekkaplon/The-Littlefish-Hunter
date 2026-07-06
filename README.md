@@ -136,7 +136,7 @@ To sustain hands-free operational continuity, a persistent reporting automation 
 * 👉 [INC-2026-002: Unauthorized SSH Access & Post-Compromise Reconnaissance (PDF)](./reports/incident/INC-2026-002_Incident_Report.pdf) — Live triage of an active brute-force intrusion, tracking rapid post-exploitation environment fingerprinting within seconds of breach validation.
 * 👉 [INC-2026-003: Active Payload Deployment & Session Termination (PDF)](./reports/incident/INC-2026-003_Incident_Report.pdf) — In-depth analysis of a multi-stage malware execution loop tracking dropper ingestion attempts and subsequent sandbox isolation.
 * 👉 [INC-2026-004: SIEM Logging Discrepancy & Rules Engineering (PDF)](./reports/incident/INC-2026-004_Incident_Report.pdf) — Analysis of automated sandbox-evasion scripts leading to the remediation of a SIEM string-interpolation length defect in a custom detection rule and the identification of redundant XML decoder definitions.
-* 👉 [INC-2026-005: Automated Multi-Wave Campaign & Rule Verification (PDF)](./reports/incident/INC-2026-005_Incident_Report.pdf) — *[Pending Upload]* High-density reconnaissance campaign analysis validating the operational success of the updated detection framework.
+* 👉 [INC-2026-005: Automated Multi-Wave Campaign & Rule Verification (PDF)](./reports/incident/INC-2026-005_Incident_Report.pdf) — Mirai-style IoT botnet via Telnet: process killing, filesystem scoring for persistence, multi-arch payload probing (MIPS → ARMv6l). C2 confirmed malicious (VT: 13/91), payload URL disguised as image/jpeg to bypass content filters.
 <br>
 <br>
 
